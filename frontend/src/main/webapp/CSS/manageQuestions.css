@@ -1,0 +1,1300 @@
+/* =====================================================
+   MANAGE QUESTIONS
+   PAGE CONTENT
+===================================================== */
+
+.manage-questions-content {
+
+    padding: 30px;
+
+    background: #f5f7fb;
+
+    min-height: calc(100vh - 70px);
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.page-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+
+.page-label {
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #64748b;
+}
+
+
+.page-header h1 {
+
+    margin: 7px 0;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #172033;
+}
+
+
+.page-header p {
+
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   HEADER ACTIONS
+===================================================== */
+
+.header-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.header-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eef4ff;
+
+    color: #2563eb;
+
+    font-size: 24px;
+}
+
+
+/* =====================================================
+   ADD QUESTION BUTTON
+===================================================== */
+
+.add-question-btn {
+
+    border: none;
+
+    background: #4f46e5;
+
+    color: #ffffff;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    transition: 0.2s ease;
+}
+
+
+.add-question-btn:hover {
+
+    background: #4338ca;
+
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   QUESTION STATISTICS
+===================================================== */
+
+.question-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(180px, 1fr));
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   STAT CARD
+===================================================== */
+
+.question-stat-card {
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    padding: 18px 20px;
+
+    min-height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 3px 12px rgba(15, 23, 42, 0.04);
+
+    transition: 0.2s ease;
+}
+
+
+.question-stat-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =====================================================
+   STAT ICON
+===================================================== */
+
+.question-stat-icon {
+
+    width: 46px;
+
+    height: 46px;
+
+    min-width: 46px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+}
+
+
+/* BLUE */
+
+.question-stat-icon.blue {
+
+    background: #eaf2ff;
+
+    color: #2563eb;
+}
+
+
+/* GREEN */
+
+.question-stat-icon.green {
+
+    background: #eafaf0;
+
+    color: #16a34a;
+}
+
+
+/* PURPLE */
+
+.question-stat-icon.purple {
+
+    background: #f3eefe;
+
+    color: #7c3aed;
+}
+
+
+/* ORANGE */
+
+.question-stat-icon.orange {
+
+    background: #fff5e8;
+
+    color: #ea580c;
+}
+
+
+/* PINK */
+
+.question-stat-icon.pink {
+
+    background: #fdf0f7;
+
+    color: #db2777;
+}
+
+
+/* =====================================================
+   STAT INFORMATION
+===================================================== */
+
+.question-stat-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.question-stat-info span {
+
+    display: block;
+
+    font-size: 12px;
+
+    color: #64748b;
+
+    margin-bottom: 3px;
+}
+
+
+.question-stat-info h2 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #172033;
+}
+
+
+/* =====================================================
+   QUESTIONS CARD
+===================================================== */
+
+.questions-card {
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.questions-card-header {
+
+    padding: 22px 24px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.questions-card-header h2 {
+
+    margin: 0 0 5px;
+
+    font-size: 19px;
+
+    color: #172033;
+}
+
+
+.questions-card-header p {
+
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #64748b;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.question-search {
+
+    position: relative;
+
+    width: 290px;
+}
+
+
+.question-search i {
+
+    position: absolute;
+
+    left: 14px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #94a3b8;
+}
+
+
+.question-search input {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 11px 14px 11px 40px;
+
+    border: 1px solid #dbe1e8;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 13px;
+
+    color: #334155;
+}
+
+
+.question-search input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =====================================================
+   FILTERS
+===================================================== */
+
+.question-filters {
+
+    padding: 15px 24px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.question-filter {
+
+    min-width: 160px;
+
+    padding: 9px 12px;
+
+    border: 1px solid #dbe1e8;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-size: 13px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+.question-filter:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =====================================================
+   TABLE CONTAINER
+===================================================== */
+
+.questions-table-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.questions-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 950px;
+}
+
+
+/* =====================================================
+   TABLE HEADER
+===================================================== */
+
+.questions-table th {
+
+    padding: 14px 18px;
+
+    text-align: left;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   TABLE BODY
+===================================================== */
+
+.questions-table td {
+
+    padding: 15px 18px;
+
+    border-top: 1px solid #edf0f4;
+
+    color: #334155;
+
+    font-size: 13px;
+
+    vertical-align: middle;
+}
+
+
+.questions-table tbody tr {
+
+    transition: 0.2s ease;
+}
+
+
+.questions-table tbody tr:hover {
+
+    background: #f8fbff;
+}
+
+
+/* =====================================================
+   QUESTION TEXT
+===================================================== */
+
+.question-text {
+
+    max-width: 380px;
+
+    white-space: normal;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+
+    color: #172033;
+}
+
+
+/* =====================================================
+   CATEGORY BADGE
+===================================================== */
+
+.category-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 5px 9px;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+.category-badge.aptitude {
+
+    background: #eaf2ff;
+
+    color: #2563eb;
+}
+
+
+.category-badge.logical {
+
+    background: #f3eefe;
+
+    color: #7c3aed;
+}
+
+
+.category-badge.communication {
+
+    background: #fdf0f7;
+
+    color: #db2777;
+}
+
+
+.category-badge.technical {
+
+    background: #fff5e8;
+
+    color: #ea580c;
+}
+
+
+/* =====================================================
+   DIFFICULTY BADGE
+===================================================== */
+
+.difficulty-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 5px 9px;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+.difficulty-badge.easy {
+
+    background: #eafaf0;
+
+    color: #15803d;
+}
+
+
+.difficulty-badge.medium {
+
+    background: #fff7e6;
+
+    color: #ca8a04;
+}
+
+
+.difficulty-badge.hard {
+
+    background: #fff1f2;
+
+    color: #dc2626;
+}
+
+
+/* =====================================================
+   CORRECT ANSWER
+===================================================== */
+
+.correct-answer {
+
+    font-weight: 600;
+
+    color: #15803d;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.question-status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+.question-status.active {
+
+    background: #eafaf0;
+
+    color: #15803d;
+}
+
+
+.question-status.inactive {
+
+    background: #fff1f2;
+
+    color: #dc2626;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.question-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    white-space: nowrap;
+}
+
+
+.question-action-btn {
+
+    width: 34px;
+
+    height: 34px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 0.2s ease;
+}
+
+
+.question-action-btn:hover {
+
+    transform: translateY(-2px);
+}
+
+
+/* EDIT */
+
+.question-action-btn.edit-btn {
+
+    background: #eef4ff;
+
+    color: #2563eb;
+}
+
+
+.question-action-btn.edit-btn:hover {
+
+    background: #dbeafe;
+}
+
+
+/* STATUS */
+
+.question-action-btn.status-btn {
+
+    background: #eafaf0;
+
+    color: #16a34a;
+}
+
+
+.question-action-btn.status-btn:hover {
+
+    background: #dcfce7;
+}
+
+
+/* DELETE */
+
+.question-action-btn.delete-btn {
+
+    background: #fff1f2;
+
+    color: #dc2626;
+}
+
+
+.question-action-btn.delete-btn:hover {
+
+    background: #ffe4e6;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.question-loading {
+
+    padding: 45px;
+
+    text-align: center;
+
+    color: #64748b;
+}
+
+
+.question-loading i {
+
+    margin-right: 8px;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.question-empty-state {
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+
+.question-empty-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f1f5f9;
+
+    color: #94a3b8;
+
+    font-size: 25px;
+}
+
+
+.question-empty-state h3 {
+
+    margin: 0 0 6px;
+
+    color: #334155;
+}
+
+
+.question-empty-state p {
+
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1250px) {
+
+    .question-stats {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+
+    .question-stats {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .questions-card-header {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 15px;
+
+    }
+
+
+    .question-search {
+
+        width: 100%;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .manage-questions-content {
+
+        padding: 20px;
+
+    }
+
+
+    .page-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+    }
+
+
+    .header-actions {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+    }
+
+
+    .question-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .questions-card-header {
+
+        padding: 18px;
+
+    }
+
+
+    .question-filters {
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+    }
+
+
+    .question-filter {
+
+        min-width: 150px;
+
+    }
+
+}
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.question-pagination {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 18px 22px;
+
+    border-top: 1px solid #e8edf5;
+
+    background: #ffffff;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* =========================================================
+   LEFT SIDE - SHOWING TEXT
+========================================================= */
+
+.pagination-info {
+
+    font-size: 13px;
+
+    color: #6b7280;
+
+    white-space: nowrap;
+
+}
+
+
+.pagination-info strong {
+
+    color: #1f2937;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   PAGINATION CONTROLS
+========================================================= */
+
+.pagination-controls {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+}
+
+
+/* =========================================================
+   PAGE NUMBER CONTAINER
+========================================================= */
+
+.pagination-numbers {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+/* =========================================================
+   COMMON PAGINATION BUTTON
+========================================================= */
+
+.pagination-btn {
+
+    min-width: 36px;
+
+    height: 36px;
+
+    padding: 0 11px;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #374151;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    transition: all 0.2s ease;
+
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.pagination-btn:hover:not(:disabled) {
+
+    background: #f5f7ff;
+
+    border-color: #4f46e5;
+
+    color: #4f46e5;
+
+    transform: translateY(-1px);
+
+}
+
+
+/* =========================================================
+   ACTIVE PAGE
+========================================================= */
+
+.pagination-btn.active {
+
+    background: #4f46e5;
+
+    border-color: #4f46e5;
+
+    color: #ffffff;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   DISABLED
+========================================================= */
+
+.pagination-btn:disabled {
+
+    opacity: 0.45;
+
+    cursor: not-allowed;
+
+    background: #f9fafb;
+
+}
+
+
+/* =========================================================
+   PREVIOUS / NEXT
+========================================================= */
+
+.pagination-btn.pagination-prev,
+
+.pagination-btn.pagination-next {
+
+    padding: 0 13px;
+
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.pagination-btn i {
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================================
+   ELLIPSIS
+========================================================= */
+
+.pagination-ellipsis {
+
+    min-width: 30px;
+
+    height: 36px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #9ca3af;
+
+    font-size: 13px;
+
+    user-select: none;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .question-pagination {
+
+        justify-content: center;
+
+        padding: 15px;
+
+    }
+
+
+    .pagination-info {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+
+    .pagination-controls {
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .pagination-btn {
+
+        min-width: 32px;
+
+        height: 32px;
+
+        padding: 0 8px;
+
+        font-size: 12px;
+
+    }
+
+
+    .pagination-btn.pagination-prev,
+
+    .pagination-btn.pagination-next {
+
+        padding: 0 9px;
+
+    }
+
+
+    .pagination-btn.pagination-prev span,
+
+    .pagination-btn.pagination-next span {
+
+        display: none;
+
+    }
+
+
+    .pagination-numbers {
+
+        gap: 3px;
+
+    }
+
+
+    .pagination-ellipsis {
+
+        min-width: 25px;
+
+        height: 32px;
+
+        font-size: 12px;
+
+    }
+
+}
